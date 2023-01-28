@@ -7,10 +7,19 @@
     <title>Hello world</title>
 </head>
 <body>
+    <script>
+      function myClick(){
+        var inputText = document.getElementById('idName').value;
+        document.getElementById('idHelloResult').value = 'Hello, '+inputText;
+       }
+
+    </script>
     <form>
         <input #idpass id="idName" name="idName" class="myName" placeholder="введите имя">
-        <button type="submit"  id="btnClick" name="btnClick"> Click me!</button>
+        <button type="button"  id="btnClick" name="btnClick" onclick="myClick()"  > say hello!</button>
+        <input  id="idHelloResult" name="HelloResult" class="MyTest" placeholder="очикуємо резльтат вітання">
+        
     </form>
-    <script src="index.js"></script>
+   
 </body>
 </html>

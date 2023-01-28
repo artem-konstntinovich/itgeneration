@@ -1,7 +1,7 @@
 const {By, Key, Builder} = require("selenium-webdriver");
 require('selenium-webdriver/chrome');
 async function example(){
-    console.log("hdello from Selenium Web Drive")
+    console.log("hello from Selenium Web Drive")
     let driver = await new Builder().forBrowser("chrome").build();
 
     await driver.get("https://lambdatest.github.io/sample-todo-app/")
